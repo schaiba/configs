@@ -1,0 +1,11 @@
+import XMonad
+
+-- import XMonad.Layout.Tabbed
+-- import XMonad.Layout.Accordion
+-- import XMonad.Layout.NoBorders
+
+mylayout = Full
+
+main = xmonad $ defaultConfig {  modMask = mod4Mask
+, layoutHook = mylayout }
+
