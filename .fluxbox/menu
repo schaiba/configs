@@ -1,0 +1,160 @@
+[begin] (Menu)
+[submenu] (Applications) <>
+ [submenu] (Development) <>
+     [exec] (KDiff3) {kdiff3  -caption "KDiff3"} <>
+ [end] # (Development)
+ [submenu] (Games) <>
+  [submenu] (Arcade) <>
+      [exec] (Abe's Amazing Adventure) {abe} <>
+      [exec] (Bomber) {bomber -caption Bomber} <>
+      [exec] (Cuyo) {/usr/games/cuyo} <>
+      [exec] (Noiz2sa) {/usr/games/noiz2sa -window} </usr/share/noiz2sa/noiz2sa.png>
+      [exec] (PowerManga) {powermanga} <>
+      [exec] (PrBooM) {prboom} <>
+      [exec] (PrBooM Multiplayer) {sh -c "prboom -net localhost"} <>
+      [exec] (Taisei) {taisei} <>
+      [exec] (TurtleArena) {/usr/bin/turtlearena} <>
+  [end] # (Arcade)
+  [submenu] (Other) <>
+      [exec] (ClanBomber) {clanbomber2} <>
+  [end] # (Other)
+ [end] # (Games)
+ [submenu] (Graphics) <>
+  [submenu] (More) <>
+      [exec] (AcquireImages) {scangui  -caption AcquireImages } <>
+      [exec] (DNGConverter) {dngconverter  -caption DNGConverter } <>
+      [exec] (ExpoBlending) {expoblending  -caption ExpoBlending } <>
+      [exec] (Gwenview) {gwenview  -caption Gwenview } <>
+      [exec] (Hugin Batch Processor) {PTBatcherGUI } </usr/share/pixmaps/ptbatcher.png>
+      [exec] (Hugin Calibrate Lens) {calibrate_lens_gui} </usr/share/pixmaps/hugin.png>
+      [exec] (Hugin Panorama Creator) {hugin} </usr/share/pixmaps/hugin.png>
+      [exec] (Okular) {okular   -caption Okular} <>
+      [exec] (Panorama) {panoramagui  -caption Panorama } <>
+      [exec] (feh) {feh } </usr/share/feh/images/feh.png>
+  [end] # (More)
+     [exec] (GIMP) {gimp-2.8 } <>
+     [exec] (Gnuplot) {xterm -e /usr/bin/gnuplot} <>
+     [exec] (gThumb) {gthumb } <>
+ [end] # (Graphics)
+ [submenu] (Internet) <>
+  [submenu] (More) <>
+      [exec] (Akregator) {akregator  -caption Akregator} <>
+      [exec] (Arora) {arora } </usr/share/pixmaps/arora.xpm>
+      [exec] (BlueDevil) {bluedevil-monolithic} <>
+      [exec] (KDE IM Contacts) {ktp-contactlist } <>
+      [exec] (KDE IM Log Viewer) {ktp-log-viewer } <>
+      [exec] (KNode) {knode -caption KNode} <>
+      [exec] (KTorrent) {ktorrent  -caption "KTorrent" } <>
+      [exec] (Konqueror) {kfmclient openProfile webbrowsing} <>
+      [exec] (Konversation) {konversation -caption "Konversation" } <>
+      [exec] (Rekonq) {rekonq } <>
+  [end] # (More)
+     [exec] (Deluge) {deluge-gtk } </usr/share/pixmaps/deluge.png>
+     [exec] (Ekiga Softphone) {ekiga} <>
+     [exec] (Empathy) {empathy} <>
+     [exec] (FileZilla) {filezilla} </usr/share/pixmaps/filezilla.png>
+     [exec] (Firefox) {firefox } <>
+     [exec] (Midori) {midori } <>
+     [exec] (Midori Private Browsing) {midori --private } <>
+     [exec] (Network Center) {/usr/bin/draknetcenter} </usr/share/mcc/themes/default/netcenter.png>
+     [exec] (Pan Newsreader) {pan} </usr/share/pixmaps/pan.png>
+     [exec] (Pidgin Internet Messenger) {pidgin} <>
+     [exec] (Web) {epiphany } <>
+     [exec] (XChat IRC) {xchat} </usr/share/pixmaps/xchat.png>
+     [exec] (xombrero Browser) {xombrero } <>
+ [end] # (Internet)
+ [submenu] (Office) <>
+  [submenu] (More) <>
+      [exec] (Claws Mail) {claws-mail } <>
+      [exec] (Kontact) {kontact} <>
+  [end] # (More)
+ [end] # (Office)
+ [submenu] (Sound & Video) <>
+  [submenu] (More) <>
+      [exec] (Audio Mixer) {xfce4-mixer} <>
+      [exec] (Dragon Player) {dragon } <>
+      [exec] (TiMidity++) {timidity -ig} <>
+  [end] # (More)
+     [exec] (PulseAudio Volume Control) {pavucontrol} <>
+ [end] # (Sound & Video)
+ [submenu] (Tools) <>
+  [submenu] (Accessibility) <>
+      [exec] (Dasher) {dasher} <>
+      [exec] (Screen Reader) {orca --replace} <>
+  [end] # (Accessibility)
+  [submenu] (Emulators) <>
+      [exec] (VirtualBox) {VirtualBox } <>
+  [end] # (Emulators)
+  [submenu] (More) <>
+      [exec] (Ark) {ark -caption Ark } <>
+      [exec] (Dolphin) {dolphin  -caption Dolphin } <>
+      [exec] (KCalc) {kcalc -caption KCalc} <>
+      [exec] (KCharSelect) {kcharselect -caption KCharSelect} <>
+      [exec] (KDE System Settings) {systemsettings -caption KDE System Settings } <>
+      [exec] (KNotes) {knotes} <>
+      [exec] (KRename) {krename -caption "KRename"   } <>
+      [exec] (KSysGuard) {ksysguard } <>
+      [exec] (KTimeTracker) {ktimetracker} <>
+      [exec] (KWalletManager) {kwalletmanager } <>
+      [exec] (KWrite) {kwrite } <>
+      [exec] (Kate) {kate -b } <>
+      [exec] (Kleopatra) {kleopatra} <>
+      [exec] (Konsole) {konsole} <>
+      [exec] (Krusader) {krusader -caption "Krusader" } <>
+      [exec] (Nepomuk Backup) {nepomukbackup} <>
+      [exec] (Nepomuk Cleaner) {nepomukcleaner} <>
+      [exec] (Qlipper) {qlipper} </usr/share/pixmaps/qlipper.png>
+      [exec] (Vifm) {xterm -e vifm } </usr/share/pixmaps/vifm.png>
+  [end] # (More)
+  [submenu] (System Tools) <>
+      [exec] (BOINC Manager) {boincmgr} <>
+      [exec] (Bulk Rename) {/usr/lib64/Thunar/ThunarBulkRename } <>
+      [exec] (Gigolo) {gigolo} <>
+      [exec] (Htop) {xterm -e htop} </usr/share/pixmaps/htop.png>
+      [exec] (Mageia Control Center) {/usr/bin/drakconf} <>
+      [exec] (NetApplet) {/usr/bin/net_applet --force} </usr/share/libDrakX/pixmaps/connected.png>
+      [exec] (Network Center) {/usr/bin/draknetcenter} </usr/share/mcc/themes/default/netcenter.png>
+      [exec] (Pinot Metasearch Tool) {pinot} <>
+      [exec] (Print Settings) {system-config-printer} <>
+      [exec] (PulseAudio Preferences) {paprefs} <>
+      [exec] (Task Manager) {xfce4-taskmanager} <>
+      [exec] (Thunar File Manager) {thunar } <>
+  [end] # (System Tools)
+     [exec] (ChBg) {chbg} <>
+     [exec] (Claws Mail Hidden Preferences) {clawsker} <>
+     [exec] (File Indexing and Search) {pinot-prefs} <>
+     [exec] (File Manager) {thunar-settings} <>
+     [exec] (IcedTea-Web Control Panel) {/usr/bin/itweb-settings.itweb} </usr/share/pixmaps/javaws.png>
+     [exec] (Mageia Welcome) {mageiawelcome} <>
+     [exec] (Mrxvt) {mrxvt} </usr/share/pixmaps/mrxvt.png>
+     [exec] (Passwords and Keys) {/usr/bin/seahorse} <>
+     [exec] (Qalculate!) {qalculate-gtk} <>
+     [exec] (Regional Settings) {/usr/bin/localedrake} <>
+     [exec] (Removable Drives and Media) {thunar-volman-settings} <>
+     [exec] (Screensaver) {xscreensaver-demo} </usr/share/pixmaps/xscreensaver.xpm>
+     [exec] (Screenshot) {xfce4-screenshooter} <>
+     [exec] (Terminal) {gnome-terminal} <>
+     [exec] (XTerm) {xterm -name Terminal} <>
+ [end] # (Tools)
+    [exec] (Install & Remove Software) {/usr/bin/drakrpm} <>
+[end] # (Applications)
+[separator]
+[config] (Configuration)
+                [workspaces] (Workspace)
+                [submenu] (System Styles) {Choose a style...}
+                        [stylesdir] (/usr/share/blackbox/styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
+			[stylesdir] (/usr/share/openbox/styles)
+                [end]
+                [submenu] (User Styles) {Choose a style...}
+                        [stylesdir] (~/.blackbox/styles)
+			[stylesdir] (~/.fluxbox/styles)
+			[stylesdir] (~/.openbox/styles)
+                [end]
+        [separator]
+        [exec] (Run Command) {fbrun -nearmouse}
+        [exec] (Lock Screen) {xlock}
+        [restart] (Restart) {}
+        [exit] (Logout)
+[end]
+[end]
