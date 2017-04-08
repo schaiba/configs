@@ -1,11 +1,10 @@
 import XMonad
-
-import XMonad.Layout.Tabbed
+import XMonad.Hooks.DynamicLog
+import XMonad.Layout.Groups.Wmii
 import XMonad.Layout.Accordion
-import XMonad.Layout.NoBorders
+import XMonad.Layout.Tabbed
+import XMonad.Layout.StackTile
+import XMonad.Layout.ResizableTile
 
-mylayoutHook = Full ||| noBorders (tabbed shrinkText defaultTheme) ||| Accordion
-
-main = xmonad $ defaultConfig { layoutHook = mylayoutHook
-					, modMask = mod4Mask }
-
+mylayout = ResizableTall 1 (3/100) (1/2) [] ||| Full ||| StackTile 1 (3/100) (1/3) ||| wmii shrinkText defaultTheme ||| Accordion ||| tabbed shrinkText defaultTheme
+main = xmonad $ defaultConfig { modMask = mod4Mask, layoutHook = mylayout, borderWidth = 0 }
