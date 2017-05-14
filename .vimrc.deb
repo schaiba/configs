@@ -1,0 +1,24 @@
+filetype plugin on
+filetype indent on
+set ruler
+set number
+set ai
+set si
+set smarttab
+set textwidth=140
+set wrap
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+syntax on
+set viminfo='10,\"100,:20,%,n~/.viminfo
+    au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm
+$"|endif|endif
+set pastetoggle=<F10>
+map <C-p> :w<CR>:!perl %<CR>
+
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.pl 0r ~/.vim/templates/pltmpl
+  augroup END
+endif
