@@ -7,6 +7,7 @@ import XMonad.Layout.StackTile
 import XMonad.Layout.ResizableTile
 import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.IndependentScreens
+import XMonad.Hooks.ManageDocks
 import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig (additionalKeys)
 
@@ -25,6 +26,7 @@ mymanagehook = composeAll [
     className =? "Vlc" --> doFloat,
     manageHook defaultConfig
     ]
+myhandleEventHook = handleEventHook defaultConfig <+> docksEventHook
 myKeys =
          [
          -- workspaces are distinct by screen
@@ -41,11 +43,12 @@ myKeys =
                ]
          ++
          [((m .|. mod4Mask, key), screenWorkspace sc >>= flip whenJust (windows . f))
-                 | (key, sc) <- zip [xK_e, xK_w, xK_r] [0..]
+                 | (key, sc) <- zip [xK_Right, xK_Left, xK_r] [0..]
                  , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 
 myWorkspaces = withScreens 2 ["gen","wrk","med","dev","net","var","7","of","9"]
-mylayout = ResizableTall 1 (3/100) (1/2) [] ||| Full ||| StackTile 1 (3/100) (1/3) ||| wmii shrinkText defaultTheme ||| Accordion ||| tabbed shrinkText defaultTheme
+-- mylayout = ResizableTall 1 (3/100) (1/2) [] ||| Full ||| StackTile 1 (3/100) (1/3) ||| wmii shrinkText defaultTheme ||| Accordion ||| tabbed shrinkText defaultTheme
+mylayout = avoidStruts (ResizableTall 1 (3/100) (1/2) [] ||| Full ||| StackTile 1 (3/100) (1/3) ||| wmii shrinkText defaultTheme ||| Accordion ||| tabbed  shrinkText defaultTheme) ||| Full
 main = xmonad conf
 
