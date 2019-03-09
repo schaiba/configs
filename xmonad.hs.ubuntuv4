@@ -39,6 +39,10 @@ myKeys =
            ((mod4Mask, xK_j ), windows W.focusUp) -- %! Move focus to the next window 
          , ((mod4Mask, xK_k ), windows W.focusDown ) -- %! Move focus to the previous window
                ]
+         ++
+         [((m .|. mod4Mask, key), screenWorkspace sc >>= flip whenJust (windows . f))
+                 | (key, sc) <- zip [xK_e, xK_w, xK_r] [0..]
+                 , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 
 myWorkspaces = withScreens 2 ["gen","wrk","med","dev","net","var","7","of","9"]
