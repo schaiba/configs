@@ -10,6 +10,7 @@ import XMonad.Layout.IndependentScreens
 import XMonad.Hooks.ManageDocks
 import qualified XMonad.StackSet as W
 import XMonad.Util.EZConfig (additionalKeys)
+import XMonad.Actions.CycleWS
 
 conf = defaultConfig {
 	workspaces= myWorkspaces,
@@ -43,8 +44,16 @@ myKeys =
                ]
          ++
          [((m .|. mod4Mask, key), screenWorkspace sc >>= flip whenJust (windows . f))
-                 | (key, sc) <- zip [xK_Right, xK_Left, xK_r] [0..]
+                 | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
                  , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
+        ++
+        [
+            ((mod4Mask, xK_Down), nextWS)
+          , ((mod4Mask, xK_Up), prevWS)
+          , ((mod4Mask, xK_Right), nextScreen)
+          , ((mod4Mask, xK_Left), prevScreen)
+          , ((mod4Mask, xK_Tab), toggleWS)
+          ]
 
 
 myWorkspaces = withScreens 2 ["gen","wrk","med","dev","net","var","7","of","9"]
