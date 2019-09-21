@@ -1,4 +1,6 @@
-Config { font = "-*-Fixed-Bold-R-Normal-*-14-*-*-*-*-*-*-*"
+-- Config { font = "-*-Fixed-Bold-R-Normal-*-14-*-*-*-*-*-*-*"
+-- Config { font = "xft:Bitstream Vera Sans Mono:size=11:bold:antialias=true"
+Config { font = "xft:SFNS Display:size=12,FontAwesome:size=12"
         , borderColor = "black"
         , border = TopB
         , bgColor = "black"
@@ -16,5 +18,5 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-14-*-*-*-*-*-*-*"
         , sepChar = "%"
         , alignSep = "}{"
 --         , template = "%StdinReader% | %cpu% | %memory% * %swap% | %wpl5s0% }{<fc=#ee9a00>%date%</fc> | %uname% | %CYVR% "
-         , template = "%StdinReader% | %cpu% | %memory% * %swap% |}{<fc=#ee9a00>%date%</fc> | %uname% |"
+         , template = "%StdinReader% | %cpu% | %memory% * %swap% |}{<fc=#FD0000>%date%</fc> | %uname% |"
         }
