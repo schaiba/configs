@@ -57,8 +57,8 @@ myKeys =
 --            ((mod4Mask, xK_Down), nextWS)
 --          , ((mod4Mask, xK_Up), prevWS)
 --          , ((mod4Mask, xK_Right), nextScreen)
-            ((mod4Mask, xK_Right), prevScreen)
-          , ((mod4Mask, xK_Left), nextScreen)
+            ((mod4Mask, xK_Right), nextScreen)
+          , ((mod4Mask, xK_Left), prevScreen)
           , ((mod4Mask, xK_Tab), toggleWS)
           ]
 
