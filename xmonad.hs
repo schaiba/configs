@@ -8,3 +8,4 @@ import XMonad.Layout.ResizableTile
 
 mylayout = ResizableTall 1 (3/100) (1/2) [] ||| Full ||| StackTile 1 (3/100) (1/3) ||| wmii shrinkText defaultTheme ||| Accordion ||| tabbed shrinkText defaultTheme
 main = xmonad $ defaultConfig { modMask = mod4Mask, layoutHook = mylayout, borderWidth = 0 }
+
